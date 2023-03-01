@@ -1,0 +1,495 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Prata&family=Roboto:wght@300;400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a {
+  color: black;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover,
+a:visited:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+* {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+h1 {
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 60px;
+  color: #1b1a17;
+}
+
+h2 {
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 43px;
+}
+
+b {
+  font-weight: 700;
+  font-style: 16x;
+}
+
+button {
+  width: 205px;
+  height: 64px;
+  color: white;
+  background-color: #444240;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+button:hover {
+  color: #444240;
+  background-color: #f7f5ef;
+}
+
+a:hover {
+  color: #d4b098;
+}
+
+.line-right::after {
+  content: "";
+  position: relative;
+  width: 50px;
+  height: 1px;
+  left: 90px;
+  bottom: 13px;
+  background-color: #8b8371;
+  display: flex;
+}
+
+.line-left::before {
+  content: "";
+  position: relative;
+  width: 50px;
+  height: 1px;
+  background-color: #8b8371;
+  display: flex;
+  right: 70px;
+  top: 12px;
+}
+
+.line-left-b::before {
+  content: "";
+  margin: -2px 0;
+  position: relative;
+  width: 50px;
+  height: 1px;
+  right: 65px;
+  top: 32px;
+  background-color: #8b8371;
+}
+
+.line-left-sm::before {
+  content: "";
+  margin: -2px 0;
+  position: relative;
+  width: 30px;
+  height: 1px;
+  right: 50px;
+  display: flex;
+  top: 50%;
+  background-color: #8b8371;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  gap: 65px;
+  padding: 35px 10%;
+}
+.header__logo-img {
+  width: 103px;
+  height: 26px;
+}
+.header__nav-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 65px;
+}
+.header__icons {
+  display: flex;
+  justify-content: space-between;
+  gap: 23px;
+}
+.header__icon {
+  font-size: 16px;
+}
+
+.hero {
+  width: 100%;
+  height: 760px;
+  background-color: #fdfdfb;
+  background-image: url("hero/hero-elipse.png");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  display: flex;
+}
+.hero__content {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 765px;
+  gap: 55px;
+}
+.hero__left {
+  margin-left: 7%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: center;
+}
+.hero__text {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  color: rgba(27, 26, 23, 0.82);
+  width: 258px;
+  padding-bottom: 64px;
+  padding-top: 39px;
+}
+.hero__right {
+  background-image: url(hero/hero-watch.png);
+  background-position: 46%;
+  display: flex;
+  align-content: center;
+  background-repeat: no-repeat;
+  justify-content: space-between;
+}
+.hero__price {
+  position: relative;
+  align-self: center;
+  font-family: "Prata";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1b1a17;
+  padding-bottom: 474px;
+}
+.hero__watch {
+  width: 490px;
+  height: 760px;
+}
+.hero__size {
+  position: relative;
+  align-self: center;
+  font-family: "Prata";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1b1a17;
+  padding-top: 474px;
+}
+
+.main {
+  padding-top: 76px;
+  padding-bottom: 90px;
+}
+.main__block {
+  display: flex;
+  justify-content: center;
+}
+.main__catalog {
+  display: flex;
+  flex-direction: column;
+}
+.main__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main__catalog-link {
+  margin-left: auto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #444240;
+}
+.main__catalog-link::after {
+  content: "";
+  margin-top: 6px;
+  width: 103px;
+  height: 1px;
+  display: flex;
+  background-color: #c4c0b6;
+}
+.main__catalog-items {
+  padding-top: 52px;
+  padding-bottom: 86px;
+  display: flex;
+  justify-content: space-around;
+  gap: 34px;
+}
+.main__catalog-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 370px;
+  height: 467px;
+  background-color: #fdfdfb;
+  background-image: url("main/ellipse-watch.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 40px;
+}
+.main__item-title {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+.main__item-price {
+  font-family: "Prata";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+.main__item-image {
+  align-items: center;
+}
+.main__item-link {
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  padding-left: 50px;
+}
+.main__background-color {
+  background: url(main/ellipse-promo.png) no-repeat right, linear-gradient(to right, #f7f5ef 40%, #fdfdfb 0);
+}
+.main__promo-gallery {
+  padding: 52px;
+  display: flex;
+  justify-content: space-between;
+  gap: 70px;
+}
+.main__image-navigation {
+  display: flex;
+  flex-direction: column;
+}
+.main__promo-image {
+  width: 521px;
+  height: 414px;
+}
+.main__navigation {
+  align-self: self-end;
+  padding-top: 20px;
+  padding-right: 50px;
+}
+.main__text-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 376px;
+  text-align: left;
+  align-self: center;
+}
+.main__text {
+  width: 376px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #444240;
+}
+.main__button {
+  background-color: #d4b098;
+}
+.main__social-links {
+  padding-top: 80px;
+  display: flex;
+  max-width: 1171px;
+  gap: 71px;
+}
+.main__social-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 471px;
+  align-self: center;
+  flex-grow: 1;
+}
+.main__social {
+  display: flex;
+  gap: 18px;
+}
+.main__link {
+  padding-top: 80px;
+}
+.main__block-image {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  max-width: 629px;
+  max-height: 460px;
+  gap: 10px;
+}
+.main__little-image {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.fab {
+  color: #444240;
+  font-size: large;
+}
+
+.footer {
+  background-color: #444240;
+  color: white;
+  height: 275px;
+  display: flex;
+  justify-content: center;
+}
+.footer__blocks {
+  width: 1183px;
+  height: 275px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  align-items: center;
+}
+.footer__logo {
+  padding-bottom: 18px;
+}
+.footer__block-link {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.footer__block-contacts {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 55px;
+}
+.footer__logo-img {
+  width: 130px;
+}
+.footer__phone-number {
+  padding: 7.5px 0px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(255, 255, 255, 0.75);
+}
+.footer__e-mail {
+  padding: 7.5px 0px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(255, 255, 255, 0.75);
+}
+.footer__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: white;
+  padding-bottom: 18px;
+}
+.footer__li {
+  padding: 7.5px 0px;
+}
+.footer__link {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/*# sourceMappingURL=style.css.map */

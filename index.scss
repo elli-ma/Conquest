@@ -1,0 +1,428 @@
+//обнуляет стили по умолчанию
+@import "zero";
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Prata&family=Roboto:wght@300;400;500;700&display=swap");
+
+* {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+$grey: #444240;
+$beige: #fdfdfb;
+$beige1: #f7f5ef;
+$beige-button: #d4b098;
+$white: white;
+h1 {
+    font-family: "Playfair Display";
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 60px;
+    color: #1b1a17;
+}
+h2 {
+    font-family: "Playfair Display";
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 43px;
+}
+b {
+    font-weight: 700;
+    font-style: 16x;
+}
+button {
+    width: 205px;
+    height: 64px;
+    color: $white;
+    background-color: $grey;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+button:hover {
+    color: $grey;
+    background-color: $beige1;
+}
+a:hover {
+    color: $beige-button;
+}
+.line-right {
+    &::after {
+        content: "";
+        position: relative;
+        width: 50px;
+        height: 1px;
+        left: 90px;
+        bottom: 13px;
+        background-color: #8b8371;
+        display: flex;
+    }
+}
+.line-left {
+    &::before {
+        content: "";
+        position: relative;
+        width: 50px;
+        height: 1px;
+        background-color: #8b8371;
+        display: flex;
+        right: 70px;
+        top: 12px;
+    }
+}
+.line-left-b {
+    &::before {
+        content: "";
+        margin: -2px 0;
+        position: relative;
+        width: 50px;
+        height: 1px;
+        right: 65px;
+        top: 32px;
+        background-color: #8b8371;
+    }
+}
+.line-left-sm {
+    &::before {
+        content: "";
+        margin: -2px 0;
+        position: relative;
+        width: 30px;
+        height: 1px;
+        right: 50px;
+        display: flex;
+        top: 50%;
+        background-color: #8b8371;
+    }
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    gap: 65px;
+    padding: 35px 10%;
+    &__logo {
+    }
+    &__logo-img {
+        width: 103px;
+        height: 26px;
+    }
+    &__nav {
+    }
+    &__nav-list {
+        display: flex;
+        justify-content: space-between;
+        gap: 65px;
+    }
+    &__nav-item {
+    }
+    &__icons {
+        display: flex;
+        justify-content: space-between;
+        gap: 23px;
+    }
+    &__icon {
+        font-size: 16px;
+    }
+}
+.hero {
+    width: 100%;
+    height: 760px;
+    background-color: $beige;
+    background-image: url("hero/hero-elipse.png");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    display: flex;
+    &__content {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 765px;
+        gap: 55px;
+    }
+    &__left {
+        margin-left: 7%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-self: center;
+    }
+    &__title {
+    }
+    &__text {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 21px;
+        color: rgba(27, 26, 23, 0.82);
+        width: 258px;
+        padding-bottom: 64px;
+        padding-top: 39px;
+    }
+    &__button {
+    }
+    &__right {
+        background-image: url(hero/hero-watch.png);
+        background-position: 46%;
+        display: flex;
+        align-content: center;
+        background-repeat: no-repeat;
+        justify-content: space-between;
+    }
+    &__price {
+        position: relative;
+        align-self: center;
+        font-family: "Prata";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #1b1a17;
+        padding-bottom: 474px;
+    }
+    &__watch {
+        width: 490px;
+        height: 760px;
+    }
+    &__size {
+        position: relative;
+        align-self: center;
+        font-family: "Prata";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #1b1a17;
+        padding-top: 474px;
+    }
+}
+.main {
+    padding-top: 76px;
+    padding-bottom: 90px;
+    &__block {
+        display: flex;
+        justify-content: center;
+    }
+    &__catalog {
+        display: flex;
+        flex-direction: column;
+    }
+    &__header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title {
+    }
+    &__catalog-link {
+        margin-left: auto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: $grey;
+        &::after {
+            content: "";
+            margin-top: 6px;
+            width: 103px;
+            height: 1px;
+            display: flex;
+            background-color: #c4c0b6;
+        }
+    }
+    &__catalog-items {
+        padding-top: 52px;
+        padding-bottom: 86px;
+        display: flex;
+        justify-content: space-around;
+        gap: 34px;
+    }
+    &__catalog-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 370px;
+        height: 467px;
+        background-color: $beige;
+        background-image: url("main/ellipse-watch.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 40px;
+    }
+    &__item-title {
+        font-family: "Playfair Display";
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+    }
+    &__item-price {
+        font-family: "Prata";
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+    }
+    &__item-image {
+        align-items: center;
+    }
+    &__item-link {
+        font-family: "Playfair Display";
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+        padding-left: 50px;
+    }
+    &__background-color {
+        background: url(main/ellipse-promo.png) no-repeat right, linear-gradient(to right, $beige1 40%, $beige 0);
+    }
+    &__promo-gallery {
+        padding: 52px;
+        display: flex;
+        justify-content: space-between;
+        gap: 70px;
+    }
+    &__image-navigation {
+        display: flex;
+        flex-direction: column;
+    }
+    &__promo-image {
+        width: 521px;
+        height: 414px;
+    }
+    &__navigation {
+        align-self: self-end;
+        padding-top: 20px;
+        padding-right: 50px;
+    }
+    &__text-gallery {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        max-width: 376px;
+        text-align: left;
+        align-self: center;
+    }
+    &__text {
+        width: 376px;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: $grey;
+    }
+    &__button {
+        background-color: $beige-button;
+    }
+    &__social-links {
+        padding-top: 80px;
+        display: flex;
+        max-width: 1171px;
+        gap: 71px;
+    }
+    &__social-content {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        max-width: 471px;
+        align-self: center;
+        flex-grow: 1;
+    }
+    &__title {
+    }
+    &__text {
+    }
+    &__social {
+        display: flex;
+        gap: 18px;
+    }
+    &__link {
+        padding-top: 80px;
+    }
+    &__block-image {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        max-width: 629px;
+        max-height: 460px;
+        gap: 10px;
+    }
+    &__little-image {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    &__image {
+    }
+}
+.fab {
+    color: $grey;
+    font-size: large;
+}
+.footer {
+    background-color: $grey;
+    color: $white;
+    height: 275px;
+    display: flex;
+    justify-content: center;
+    &__blocks {
+        width: 1183px;
+        height: 275px;
+        display: flex;
+        justify-content: space-between;
+        color: $white;
+        align-items: center;
+    }
+    &__logo {
+        padding-bottom: 18px;
+    }
+    &__block-link {
+        display: flex;
+        flex-direction: column;
+        color: $white;
+    }
+    &__block-contacts {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 55px;
+    }
+    &__logo-img {
+        width: 130px;
+    }
+    &__phone-number {
+        padding: 7.5px 0px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: rgba(255, 255, 255, 0.75);
+    }
+    &__e-mail {
+        padding: 7.5px 0px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: rgba(255, 255, 255, 0.75);
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+        color: $white;
+        padding-bottom: 18px;
+    }
+    &__links {
+    }
+    &__li {
+        padding: 7.5px 0px;
+    }
+    &__link {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: rgba(255, 255, 255, 0.75);
+    }
+}
